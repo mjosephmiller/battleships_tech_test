@@ -1,0 +1,29 @@
+var Browser = require('zombie');
+var assert = require('assert');
+var chai = require('chai');
+var expect  = chai.expect;
+var assert = chai.assert;
+
+describe('home page', function() {
+  beforeEach(function() {
+    this.browser = new Browser({ site: 'http://localhost:8080' });
+  });
+
+  beforeEach(function(done) {
+    this.browser.visit('/', done);
+  });
+
+  it('should load', function(){
+    assert.ok(this.browser.success);
+  });
+
+  it('should load the page with a grid', function(){
+    this.browser.assert.element('#container');
+    this.browser.assert.attribute('div.water');
+  });
+
+  it('should load the page with an instruction form', function(){
+    this.browser.assert.element('#instructions');
+  });
+  
+});

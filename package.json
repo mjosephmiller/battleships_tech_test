@@ -1,0 +1,16 @@
+{
+  "name": "tech-test-battleships",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "chai": "^3.5.0",
+    "zombie": "^4.2.1"
+  }
+}

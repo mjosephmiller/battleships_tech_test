@@ -1,0 +1,27 @@
+#container{
+  width: 500px;
+  height: 500px;
+  position: relative;
+  outline: 1px solid black;
+  margin-left: 30%
+}
+.water{
+  height: 50px;
+  width: 50px;
+  position: relative;
+  float: left;
+  background-color: lightblue;
+  outline: 1px solid grey;
+}
+
+.ship{
+  height: 50px;
+  width: 50px;
+  position: relative;
+  float: left;
+  background-color: grey;
+}
+
+#entered-text{
+
+}
