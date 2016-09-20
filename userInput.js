@@ -4,8 +4,9 @@ $(document).ready(function(){
   var index = 0;
 
   $("#addInstructions").on("click", function() {
-    var typedText = $('#typed-text').val();
+    var positionInstruction = $('#typed-text').val();
     document.getElementById('typed-text').value = "";
-    $('#entered-text').html(typedText);
+    // $('#entered-text').html(typedText);
+    gameController.setShipPosition(positionInstruction);
   });
 });

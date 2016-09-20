@@ -17,9 +17,17 @@
 .ship{
   height: 50px;
   width: 50px;
-  position: relative;
+  position: absolute;
   float: left;
   background-color: grey;
+}
+
+.computer-ship{
+  height: 50px;
+  width: 50px;
+  position: relative;
+  float: left;
+  background-color: black;
 }
 
 #entered-text{

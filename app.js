@@ -1,5 +1,5 @@
-var map = new Map();
+var gameController = new GameController();
 
 window.onload=function(){
-  map.drawMap();
+  gameController.startGame();
 };

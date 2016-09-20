@@ -12,7 +12,7 @@
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
     ];
   }
 
@@ -23,11 +23,13 @@
         if(parseInt(this.Array[i][j]) === 0){
           $('#container').append('<div class="water"></div>');
         }
-        if(parseInt(this.Array[i][j]) === 1){
-          $('#container').append('<div class="ship"></div>');
+        else{
+          $('#container').append('<div class="computer-ship"></div>');
         }
       }
     }
+    $('#container').append('<div class="ship"></div>');
+
   };
 
   exports.Map = Map;
